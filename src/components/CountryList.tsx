@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import type { Country } from '../types';
-import CountryItem from './CountryItem';
+import { CountryItem } from './CountryItem';
 
 interface Props {
   countries: Country[];

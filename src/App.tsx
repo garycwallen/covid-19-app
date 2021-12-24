@@ -1,8 +1,8 @@
 import { Global, css } from '@emotion/react';
 import { useEffect, useState } from 'react';
-import BarChart from './components/BarChart';
-import CountryList from './components/CountryList';
-import GlobalInfo from './components/GlobalInfo';
+import { BarChart } from './components/BarChart';
+import { CountryList } from './components/CountryList';
+import { GlobalInfo } from './components/GlobalInfo';
 import type { ResponseData, Country } from './types';
 
 export const App: React.FunctionComponent = () => {
