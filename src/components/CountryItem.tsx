@@ -26,7 +26,7 @@ const ListContent = styled.div<ListContentProps>`
   margin: 5px;
   padding: 10px 0;
 `;
-const CountryItem: React.FunctionComponent<Props> = ({
+export const CountryItem: React.FunctionComponent<Props> = ({
   country,
   onItemClick,
 }) => {
@@ -54,5 +54,3 @@ const CountryItem: React.FunctionComponent<Props> = ({
     </ListItem>
   );
 };
-
-export default CountryItem;

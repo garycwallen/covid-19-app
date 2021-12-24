@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const GlobalInfo: React.FunctionComponent<Props> = ({
+export const GlobalInfo: React.FunctionComponent<Props> = ({
   newConfirmed,
   newDeaths,
   newRecovered,
@@ -24,5 +24,3 @@ const GlobalInfo: React.FunctionComponent<Props> = ({
     </Wrapper>
   );
 };
-
-export default GlobalInfo;

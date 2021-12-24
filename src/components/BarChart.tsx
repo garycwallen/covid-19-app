@@ -22,7 +22,7 @@ const ChartWrapper = styled.div`
   margin: 0 auto;
 `;
 
-const BarChart: React.FunctionComponent<Props> = ({ countries }) => {
+export const BarChart: React.FunctionComponent<Props> = ({ countries }) => {
   const generateChartData = (): ChartData => {
     const data: number[] = [];
     const labels: string[] = [];
@@ -66,5 +66,3 @@ const BarChart: React.FunctionComponent<Props> = ({ countries }) => {
     </ChartWrapper>
   );
 };
-
-export default BarChart;

@@ -5,7 +5,7 @@ import CountryList from './components/CountryList';
 import GlobalInfo from './components/GlobalInfo';
 import type { ResponseData, Country } from './types';
 
-const App: React.FunctionComponent = () => {
+export const App: React.FunctionComponent = () => {
   const [data, setData] = useState<ResponseData | undefined>(undefined);
   const [activeCountries, setActiveCountries] = useState<Country[]>([]);
 
@@ -14,7 +14,6 @@ const App: React.FunctionComponent = () => {
     const data: ResponseData = await result.json();
 
     setData(data);
-    console.log(data);
   };
 
   useEffect(() => {
@@ -71,5 +70,3 @@ const App: React.FunctionComponent = () => {
     </div>
   );
 };
-
-export default App;

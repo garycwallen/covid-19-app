@@ -13,7 +13,7 @@ const ListWrapper = styled.ul`
   flex-wrap: wrap;
 `;
 
-const CountryList: React.FunctionComponent<Props> = ({
+export const CountryList: React.FunctionComponent<Props> = ({
   countries,
   onItemClick,
 }) => {
@@ -29,5 +29,3 @@ const CountryList: React.FunctionComponent<Props> = ({
     </ListWrapper>
   );
 };
-
-export default CountryList;
